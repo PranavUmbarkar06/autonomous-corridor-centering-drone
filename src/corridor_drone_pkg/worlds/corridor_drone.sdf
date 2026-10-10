@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="corridor_world">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient></material>
+        </visual>
+      </link>
+    </model>
+
+    <!--
+      3.0 m clear width: wall centers at +/-1.6 m with 0.2 m thickness.
+      For 6.0 m clear width, use centers +/-3.1 m and front-wall span 6.2 m.
+    -->
+    <!-- LEFT CORRIDOR WALL -->
+    <model name="left_wall">
+      <static>true</static>
+      <pose>5 1.6 1 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>10 0.2 2</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>10 0.2 2</size></box></geometry></visual>
+      </link>
+    </model>
+
+    <!-- RIGHT CORRIDOR WALL -->
+    <model name="right_wall">
+      <static>true</static>
+      <pose>5 -2 1 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>10 0.2 2</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>10 0.2 2</size></box></geometry></visual>
+      </link>
+    </model>
+
+    <!-- FRONT CORRIDOR WALL; move along X to change the corridor length. -->
+    <model name="front_wall">
+      <static>true</static>
+      <pose>10.1 0 1 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>0.2 3.6 2</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 3.6 2</size></box></geometry></visual>
+      </link>
+    </model>
+
+    <!-- Primitive kinematic proxy for corridor-control testing, not a mesh-faithful Iris. -->
+    <model name="iris_drone">
+      <pose>0 0 0.5 0 0 0</pose>
+      <link name="base_link">
+        <gravity>false</gravity>
+        <inertial>
+          <mass>1.5</mass>
+          <inertia>
+            <ixx>0.08</ixx><ixy>0.0</ixy><ixz>0.0</ixz>
+            <iyy>0.08</iyy><iyz>0.0</iyz><izz>0.12</izz>
+          </inertia>
+        </inertial>
+        
+        <!-- Central Body Chassis -->
+        <visual name="center_body">
+          <geometry><box><size>0.4 0.4 0.15</size></box></geometry>
+          <material><ambient>0.1 0.1 0.8 1</ambient><diffuse>0.1 0.1 0.8 1</diffuse></material>
+        </visual>
+
+        <!-- Front Nose Indicator -->
+        <visual name="nose">
+          <pose>0.25 0 0 0 0 0</pose>
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+          <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+
+        <!-- Rotor 1 (Front-Left) -->
+        <visual name="rotor_fl">
+          <pose>0.2 0.2 0.1 0 0 0</pose>
+          <geometry><cylinder><radius>0.12</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+        </visual>
+
+        <!-- Rotor 2 (Front-Right) -->
+        <visual name="rotor_fr">
+          <pose>0.2 -0.2 0.1 0 0 0</pose>
+          <geometry><cylinder><radius>0.12</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+        </visual>
+
+        <!-- Rotor 3 (Rear-Left) -->
+        <visual name="rotor_rl">
+          <pose>-0.2 0.2 0.1 0 0 0</pose>
+          <geometry><cylinder><radius>0.12</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+        </visual>
+
+        <!-- Rotor 4 (Rear-Right) -->
+        <visual name="rotor_rr">
+          <pose>-0.2 -0.2 0.1 0 0 0</pose>
+          <geometry><cylinder><radius>0.12</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+        </visual>
+
+        <!-- Collision Box -->
+        <collision name="collision">
+          <geometry><box><size>0.5 0.5 0.2</size></box></geometry>
+        </collision>
+
+        <!-- 2D LIDAR SENSOR -->
+        <sensor name="gpu_lidar" type="gpu_lidar">
+          <pose>0 0 0.15 0 0 0</pose>
+          <topic>/scan</topic>
+          <update_rate>10</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>360</samples>
+                <resolution>1</resolution>
+                <min_angle>-3.14159</min_angle>
+                <max_angle>3.14159</max_angle>
+              </horizontal>
+            </scan>
+            <range>
+              <min>0.15</min>
+              <max>10.0</max>
+            </range>
+          </ray>
+          <always_on>1</always_on>
+          <visualize>false</visualize>
+        </sensor>
+      </link>
+
+      <!-- VELOCITY CONTROL PLUGIN -->
+      <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+        <topic>/cmd_vel</topic>
+      </plugin>
+    </model>
+  </world>
+</sdf>

@@ -1,0 +1,34 @@
+running develop
+Removing /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor-drone-pkg.egg-link (link to .)
+running egg_info
+writing ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/requires.txt
+writing top-level names to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/top_level.txt
+reading manifest file '../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build
+creating /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib
+creating /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg
+copying corridor_drone_pkg/__init__.py -> /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg
+copying corridor_drone_pkg/corridor_controller.py -> /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg
+running install
+running install_lib
+creating /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg
+copying /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg/__init__.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg
+copying /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg/corridor_controller.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg
+byte-compiling /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg/corridor_controller.py to corridor_controller.cpython-312.pyc
+running install_data
+copying resource/corridor_drone_pkg -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg
+copying launch/corridor_sim.launch.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/launch
+copying worlds/corridor_drone.sdf -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/worlds
+running install_egg_info
+Copying ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing corridor_controller script to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/corridor_drone_pkg
+writing list of installed files to '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/install.log'

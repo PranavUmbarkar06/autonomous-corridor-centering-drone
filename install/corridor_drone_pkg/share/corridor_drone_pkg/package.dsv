@@ -1,0 +1,6 @@
+source;share/corridor_drone_pkg/hook/pythonpath.dsv
+source;share/corridor_drone_pkg/hook/pythonpath.sh
+source;share/corridor_drone_pkg/hook/ament_prefix_path.dsv
+source;share/corridor_drone_pkg/hook/ament_prefix_path.sh
+source;../../build/corridor_drone_pkg/share/corridor_drone_pkg/hook/pythonpath_develop.dsv
+source;../../build/corridor_drone_pkg/share/corridor_drone_pkg/hook/pythonpath_develop.sh

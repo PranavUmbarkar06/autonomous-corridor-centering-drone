@@ -1,0 +1,2 @@
+[console_scripts]
+corridor_controller = corridor_drone_pkg.corridor_controller:main

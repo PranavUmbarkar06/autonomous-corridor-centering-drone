@@ -1,0 +1,47 @@
+[0.144s] Invoking command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest
+[0.344s] [1m============================= test session starts ==============================[0m
+[0.345s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.347s] cachedir: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache
+[0.347s] rootdir: /home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg
+[0.347s] plugins: ament-lint-0.17.5, ament-flake8-0.17.5, ament-pep257-0.17.5, launch-testing-ros-0.26.12, ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, cov-4.1.0, colcon-core-0.21.3
+[0.394s] [1mcollecting ... [0m[1m
+[0.394s] collected 3 items                                                              [0m
+[0.394s] 
+[0.398s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.512s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[0.529s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.529s] 
+[0.529s] =================================== FAILURES ===================================
+[0.529s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.529s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.550s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.550s] [1m[31mE   AssertionError: Found 1 code style errors / warnings:[0m
+[0.550s] [1m[31mE     ./setup.py:31:1: W391 blank line at end of file[0m
+[0.551s] [1m[31mE   assert 1 == 0[0m
+[0.551s] ----------------------------- Captured stdout call -----------------------------
+[0.551s] 
+[0.551s] ./setup.py:31:1: W391 blank line at end of file
+[0.551s] 
+[0.551s] ^
+[0.551s] 
+[0.551s] 1     W391 blank line at end of file
+[0.551s] 
+[0.551s] 7 files checked
+[0.551s] 1 errors
+[0.551s] 
+[0.551s] 'W'-type errors: 1
+[0.551s] 
+[0.551s] Checked files:
+[0.551s] 
+[0.551s] * ./setup.py
+[0.551s] * ./launch/corridor_sim.launch.py
+[0.551s] * ./corridor_drone_pkg/__init__.py
+[0.551s] * ./corridor_drone_pkg/corridor_controller.py
+[0.551s] * ./test/test_pep257.py
+[0.551s] * ./test/test_flake8.py
+[0.552s] * ./test/test_copyright.py
+[0.552s] - generated xml file: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml -
+[0.552s] [36m[1m=========================== short test summary info ============================[0m
+[0.552s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 1 code style errors / warnings:
+[0.552s] [31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.21s[0m[31m ====================[0m
+[0.611s] Invoked command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest

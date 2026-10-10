@@ -1,0 +1,68 @@
+[0.312s] Invoking command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg': AMENT_PREFIX_PATH=/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest
+[0.741s] [1m============================= test session starts ==============================[0m
+[0.741s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.746s] cachedir: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache
+[0.747s] rootdir: /home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg
+[0.747s] plugins: ament-lint-0.17.5, ament-flake8-0.17.5, ament-pep257-0.17.5, launch-testing-ros-0.26.12, ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, cov-4.1.0, colcon-core-0.21.3
+[0.834s] [1mcollecting ... [0m[1m
+[0.834s] collected 3 items                                                              [0m
+[0.835s] 
+[0.841s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[1.089s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[1.131s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[1.131s] 
+[1.131s] =================================== FAILURES ===================================
+[1.131s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[1.131s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[1.173s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1.173s] [1m[31mE   AssertionError: Found 5 code style errors / warnings:[0m
+[1.173s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:184:11: W292 no newline at end of file[0m
+[1.173s] [1m[31mE     ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.[0m
+[1.173s] [1m[31mE     ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file[0m
+[1.173s] [1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[1.173s] [1m[31mE     ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.[0m
+[1.173s] [1m[31mE   assert 1 == 0[0m
+[1.174s] ----------------------------- Captured stdout call -----------------------------
+[1.174s] 
+[1.174s] ./corridor_drone_pkg/corridor_controller.py:184:11: W292 no newline at end of file
+[1.174s]     main()          ^
+[1.174s] 
+[1.174s] ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[1.174s] from ament_index_python.packages import get_package_share_directory
+[1.174s] ^
+[1.174s] 
+[1.174s] ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file
+[1.174s]     ])      ^
+[1.174s] 
+[1.174s] ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[1.175s] from glob import glob
+[1.175s] ^
+[1.175s] 
+[1.175s] ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.
+[1.175s] from setuptools import find_packages, setup
+[1.175s] ^
+[1.175s] 
+[1.175s] 1     I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[1.175s] 2     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[1.175s] 2     W292 no newline at end of file
+[1.175s] 
+[1.175s] 7 files checked
+[1.175s] 5 errors
+[1.176s] 
+[1.176s] 'I'-type errors: 3
+[1.176s] 'W'-type errors: 2
+[1.176s] 
+[1.176s] Checked files:
+[1.176s] 
+[1.176s] * ./setup.py
+[1.176s] * ./launch/corridor_sim.launch.py
+[1.176s] * ./corridor_drone_pkg/__init__.py
+[1.176s] * ./corridor_drone_pkg/corridor_controller.py
+[1.176s] * ./test/test_pep257.py
+[1.176s] * ./test/test_flake8.py
+[1.176s] * ./test/test_copyright.py
+[1.177s] - generated xml file: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml -
+[1.177s] [36m[1m=========================== short test summary info ============================[0m
+[1.177s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 5 code style errors / warnings:
+[1.177s] [31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.43s[0m[31m ====================[0m
+[1.301s] Invoked command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg' returned '1': AMENT_PREFIX_PATH=/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest

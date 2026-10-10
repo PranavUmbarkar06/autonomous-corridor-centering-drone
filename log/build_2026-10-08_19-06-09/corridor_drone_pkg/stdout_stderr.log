@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing corridor_drone_pkg.egg-info/PKG-INFO
+writing dependency_links to corridor_drone_pkg.egg-info/dependency_links.txt
+writing entry points to corridor_drone_pkg.egg-info/entry_points.txt
+writing requirements to corridor_drone_pkg.egg-info/requires.txt
+writing top-level names to corridor_drone_pkg.egg-info/top_level.txt
+reading manifest file 'corridor_drone_pkg.egg-info/SOURCES.txt'
+writing manifest file 'corridor_drone_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor-drone-pkg.egg-link (link to .)
+Installing corridor_controller script to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/corridor_drone_pkg
+
+Installed /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg
+running symlink_data
+creating /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/worlds
+symbolically linking /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/worlds/corridor_drone.sdf -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/worlds

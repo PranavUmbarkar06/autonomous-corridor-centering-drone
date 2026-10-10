@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: corridor-drone-pkg
+Version: 0.0.0
+Summary: Autonomous corridor centering for ROS 2 Jazzy and Gazebo Harmonic
+Maintainer: Pranav
+Maintainer-email: user@todo.todo
+License: TODO: License declaration

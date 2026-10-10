@@ -1,0 +1,38 @@
+[0.473s] Invoking command in '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build
+[0.656s] running develop
+[0.760s] Removing /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor-drone-pkg.egg-link (link to .)
+[0.786s] Invoked command in '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build
+[0.787s] Invoking command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/corridor_drone_pkg build --build-base /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build install --record /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/install.log --install-scripts $base/lib/corridor_drone_pkg --single-version-externally-managed install_data --force
+[0.946s] running egg_info
+[0.955s] writing ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/PKG-INFO
+[0.956s] writing dependency_links to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/dependency_links.txt
+[0.956s] writing entry points to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/entry_points.txt
+[0.956s] writing requirements to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/requires.txt
+[0.956s] writing top-level names to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/top_level.txt
+[0.976s] reading manifest file '../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/SOURCES.txt'
+[0.976s] writing manifest file '../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/SOURCES.txt'
+[0.976s] running build
+[0.976s] running build_py
+[0.976s] creating /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build
+[0.977s] creating /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib
+[0.977s] creating /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg
+[0.977s] copying corridor_drone_pkg/__init__.py -> /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg
+[0.977s] copying corridor_drone_pkg/corridor_controller.py -> /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg
+[0.977s] running install
+[0.981s] running install_lib
+[0.991s] creating /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg
+[0.991s] copying /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg/__init__.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg
+[0.992s] copying /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg/corridor_controller.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg
+[0.992s] byte-compiling /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg/__init__.py to __init__.cpython-312.pyc
+[0.992s] byte-compiling /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg/corridor_controller.py to corridor_controller.cpython-312.pyc
+[0.993s] running install_data
+[0.993s] copying resource/corridor_drone_pkg -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/ament_index/resource_index/packages
+[0.993s] copying package.xml -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg
+[0.993s] copying launch/corridor_sim.launch.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/launch
+[0.993s] copying worlds/corridor_drone.sdf -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/worlds
+[0.993s] running install_egg_info
+[1.005s] Copying ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg-0.0.0-py3.12.egg-info
+[1.006s] running install_scripts
+[1.078s] Installing corridor_controller script to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/corridor_drone_pkg
+[1.078s] writing list of installed files to '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/install.log'
+[1.100s] Invoked command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/corridor_drone_pkg build --build-base /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build install --record /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/install.log --install-scripts $base/lib/corridor_drone_pkg --single-version-externally-managed install_data --force

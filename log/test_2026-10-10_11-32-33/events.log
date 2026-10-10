@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.000137] (corridor_drone_pkg) JobQueued: {'identifier': 'corridor_drone_pkg', 'dependencies': OrderedDict({'corridor_drone_pkg': '/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg'})}
+[0.000450] (corridor_drone_pkg) JobStarted: {'identifier': 'corridor_drone_pkg'}
+[0.099848] (-) TimerEvent: {}
+[0.142315] (corridor_drone_pkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'AI_AGENT': 'github_copilot_vscode_agent', 'USER': 'pranav-umbarkar', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_EDITOR': ':', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'COPILOT_AGENT': '1', 'HOME': '/home/pranav-umbarkar', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'TERM_PROGRAM_VERSION': '1.140.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2241', 'SYSTEMD_EXEC_PID': '2624', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3881', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/pranav-umbarkar/corridor_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pranav-umbarkar', 'JOURNAL_STREAM': '10:23951', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pranav-umbarkar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'HISTCONTROL': 'ignorespace', 'WINDOWPATH': '2', 'PATH': '/home/pranav-umbarkar/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/pranav-umbarkar/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/lib/ccache:/home/pranav-umbarkar/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/pranav-umbarkar/venv-ardupilot/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/lib/ccache:/home/pranav-umbarkar/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/pranav-umbarkar/venv-ardupilot/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/pranav-umbarkar-victus:@/tmp/.ICE-unix/2590,unix/pranav-umbarkar-victus:/tmp/.ICE-unix/2590', 'INVOCATION_ID': 'a0a31a0b42b741f1ae30561761685b98', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-492dd87ed6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VIRTUAL_ENV': '/home/pranav-umbarkar/venv-ardupilot', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg', 'GIT_MERGE_AUTOEDIT': 'no', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': '9a69ffca7b1cdf7eed7c4ba7f907bb39', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache'}), 'shell': False}
+[0.199980] (-) TimerEvent: {}
+[0.300371] (-) TimerEvent: {}
+[0.354287] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.354479] (corridor_drone_pkg) StdoutLine: {'line': b'platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[0.356755] (corridor_drone_pkg) StdoutLine: {'line': b'cachedir: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache\n'}
+[0.356829] (corridor_drone_pkg) StdoutLine: {'line': b'rootdir: /home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg\n'}
+[0.356884] (corridor_drone_pkg) StdoutLine: {'line': b'plugins: ament-lint-0.17.5, ament-flake8-0.17.5, ament-pep257-0.17.5, launch-testing-ros-0.26.12, ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, cov-4.1.0, colcon-core-0.21.3\n'}
+[0.400457] (-) TimerEvent: {}
+[0.403754] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.403910] (corridor_drone_pkg) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[0.403971] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.407609] (corridor_drone_pkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 33%]\x1b[0m\n'}
+[0.500574] (-) TimerEvent: {}
+[0.520993] (corridor_drone_pkg) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[0.537685] (corridor_drone_pkg) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[0.537989] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.538093] (corridor_drone_pkg) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[0.538165] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[0.538231] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[0.560099] (corridor_drone_pkg) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[0.560329] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 13 code style errors / warnings:\x1b[0m\n'}
+[0.560400] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:70:1: W293 blank line contains whitespace\x1b[0m\n'}
+[0.560456] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:72:22: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.560510] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:129:26: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.560563] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:138:30: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.560636] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:139:100: E501 line too long (100 > 99 characters)\x1b[0m\n'}
+[0.560684] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:142:26: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.560733] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:177:26: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.560781] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:198:26: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[0.560828] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./corridor_drone_pkg/corridor_controller.py:231:11: W292 no newline at end of file\x1b[0m\n'}
+[0.560877] (corridor_drone_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.\x1b[0m\n"}
+[0.560930] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file\x1b[0m\n'}
+[0.560980] (corridor_drone_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\x1b[0m\n"}
+[0.561029] (corridor_drone_pkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.\x1b[0m\n"}
+[0.561092] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.561139] (corridor_drone_pkg) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.561195] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.561247] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:70:1: W293 blank line contains whitespace\n'}
+[0.561298] (corridor_drone_pkg) StdoutLine: {'line': b'        \n'}
+[0.561347] (corridor_drone_pkg) StdoutLine: {'line': b'^\n'}
+[0.561398] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.561451] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:72:22: Q000 Double quotes found but single quotes preferred\n'}
+[0.561507] (corridor_drone_pkg) StdoutLine: {'line': b'        self.state = "TAKEOFF"\n'}
+[0.561560] (corridor_drone_pkg) StdoutLine: {'line': b'                     ^\n'}
+[0.561611] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.561666] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:129:26: Q000 Double quotes found but single quotes preferred\n'}
+[0.561715] (corridor_drone_pkg) StdoutLine: {'line': b'        if self.state == "TAKEOFF":\n'}
+[0.561764] (corridor_drone_pkg) StdoutLine: {'line': b'                         ^\n'}
+[0.561811] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.561860] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:138:30: Q000 Double quotes found but single quotes preferred\n'}
+[0.561909] (corridor_drone_pkg) StdoutLine: {'line': b'                self.state = "CRUISE"\n'}
+[0.561956] (corridor_drone_pkg) StdoutLine: {'line': b'                             ^\n'}
+[0.562005] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.562063] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:139:100: E501 line too long (100 > 99 characters)\n'}
+[0.562112] (corridor_drone_pkg) StdoutLine: {'line': b"                self.get_logger().info('Takeoff complete. Entering CRUISE corridor centering mode.')\n"}
+[0.562161] (corridor_drone_pkg) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[0.562212] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.562260] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:142:26: Q000 Double quotes found but single quotes preferred\n'}
+[0.562313] (corridor_drone_pkg) StdoutLine: {'line': b'        if self.state == "LANDING":\n'}
+[0.562363] (corridor_drone_pkg) StdoutLine: {'line': b'                         ^\n'}
+[0.562411] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.562459] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:177:26: Q000 Double quotes found but single quotes preferred\n'}
+[0.562507] (corridor_drone_pkg) StdoutLine: {'line': b'            self.state = "LANDING"\n'}
+[0.562554] (corridor_drone_pkg) StdoutLine: {'line': b'                         ^\n'}
+[0.562600] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.562648] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:198:26: Q000 Double quotes found but single quotes preferred\n'}
+[0.562695] (corridor_drone_pkg) StdoutLine: {'line': b'            self.state = "LANDING"\n'}
+[0.562739] (corridor_drone_pkg) StdoutLine: {'line': b'                         ^\n'}
+[0.562785] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.562831] (corridor_drone_pkg) StdoutLine: {'line': b'./corridor_drone_pkg/corridor_controller.py:231:11: W292 no newline at end of file\n'}
+[0.562880] (corridor_drone_pkg) StdoutLine: {'line': b'    main()          ^\n'}
+[0.562928] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.562976] (corridor_drone_pkg) StdoutLine: {'line': b"./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[0.563025] (corridor_drone_pkg) StdoutLine: {'line': b'from ament_index_python.packages import get_package_share_directory\n'}
+[0.563078] (corridor_drone_pkg) StdoutLine: {'line': b'^\n'}
+[0.563124] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.563170] (corridor_drone_pkg) StdoutLine: {'line': b'./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file\n'}
+[0.563216] (corridor_drone_pkg) StdoutLine: {'line': b'    ])      ^\n'}
+[0.563260] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.563306] (corridor_drone_pkg) StdoutLine: {'line': b"./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\n"}
+[0.563352] (corridor_drone_pkg) StdoutLine: {'line': b'from glob import glob\n'}
+[0.563397] (corridor_drone_pkg) StdoutLine: {'line': b'^\n'}
+[0.563442] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.563487] (corridor_drone_pkg) StdoutLine: {'line': b"./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.\n"}
+[0.563534] (corridor_drone_pkg) StdoutLine: {'line': b'from setuptools import find_packages, setup\n'}
+[0.563580] (corridor_drone_pkg) StdoutLine: {'line': b'^\n'}
+[0.563627] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.563677] (corridor_drone_pkg) StdoutLine: {'line': b'1     E501 line too long (100 > 99 characters)\n'}
+[0.563723] (corridor_drone_pkg) StdoutLine: {'line': b"1     I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'\n"}
+[0.563772] (corridor_drone_pkg) StdoutLine: {'line': b"2     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[0.563820] (corridor_drone_pkg) StdoutLine: {'line': b'6     Q000 Double quotes found but single quotes preferred\n'}
+[0.563867] (corridor_drone_pkg) StdoutLine: {'line': b'2     W292 no newline at end of file\n'}
+[0.563916] (corridor_drone_pkg) StdoutLine: {'line': b'1     W293 blank line contains whitespace\n'}
+[0.563981] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.564029] (corridor_drone_pkg) StdoutLine: {'line': b'7 files checked\n'}
+[0.564083] (corridor_drone_pkg) StdoutLine: {'line': b'13 errors\n'}
+[0.564132] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.564179] (corridor_drone_pkg) StdoutLine: {'line': b"'E'-type errors: 1\n"}
+[0.564228] (corridor_drone_pkg) StdoutLine: {'line': b"'I'-type errors: 3\n"}
+[0.564274] (corridor_drone_pkg) StdoutLine: {'line': b"'Q'-type errors: 6\n"}
+[0.564318] (corridor_drone_pkg) StdoutLine: {'line': b"'W'-type errors: 3\n"}
+[0.564355] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.564392] (corridor_drone_pkg) StdoutLine: {'line': b'Checked files:\n'}
+[0.564429] (corridor_drone_pkg) StdoutLine: {'line': b'\n'}
+[0.564466] (corridor_drone_pkg) StdoutLine: {'line': b'* ./setup.py\n'}
+[0.564506] (corridor_drone_pkg) StdoutLine: {'line': b'* ./launch/corridor_sim.launch.py\n'}
+[0.564545] (corridor_drone_pkg) StdoutLine: {'line': b'* ./corridor_drone_pkg/__init__.py\n'}
+[0.564587] (corridor_drone_pkg) StdoutLine: {'line': b'* ./corridor_drone_pkg/corridor_controller.py\n'}
+[0.564625] (corridor_drone_pkg) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[0.564662] (corridor_drone_pkg) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[0.564703] (corridor_drone_pkg) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[0.564768] (corridor_drone_pkg) StdoutLine: {'line': b'- generated xml file: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml -\n'}
+[0.564817] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[36m\x1b[1m=========================== short test summary info ============================\x1b[0m\n'}
+[0.564860] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[31mFAILED\x1b[0m test/test_flake8.py::\x1b[1mtest_flake8\x1b[0m - AssertionError: Found 13 code style errors / warnings:\n'}
+[0.564900] (corridor_drone_pkg) StdoutLine: {'line': b'\x1b[31m==================== \x1b[31m\x1b[1m1 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m\x1b[31m in 0.21s\x1b[0m\x1b[31m ====================\x1b[0m\n'}
+[0.600859] (-) TimerEvent: {}
+[0.622097] (corridor_drone_pkg) CommandEnded: {'returncode': 1}
+[0.622397] (corridor_drone_pkg) TestFailure: {'identifier': 'corridor_drone_pkg'}
+[0.622492] (corridor_drone_pkg) JobEnded: {'identifier': 'corridor_drone_pkg', 'rc': 0}
+[0.622842] (-) EventReactorShutdown: {}

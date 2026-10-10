@@ -1,0 +1,113 @@
+[0.143s] Invoking command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest
+[0.354s] [1m============================= test session starts ==============================[0m
+[0.354s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.356s] cachedir: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache
+[0.356s] rootdir: /home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg
+[0.356s] plugins: ament-lint-0.17.5, ament-flake8-0.17.5, ament-pep257-0.17.5, launch-testing-ros-0.26.12, ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, cov-4.1.0, colcon-core-0.21.3
+[0.403s] [1mcollecting ... [0m[1m
+[0.403s] collected 3 items                                                              [0m
+[0.404s] 
+[0.407s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.521s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[0.537s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.538s] 
+[0.538s] =================================== FAILURES ===================================
+[0.538s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.538s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.560s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.560s] [1m[31mE   AssertionError: Found 13 code style errors / warnings:[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:70:1: W293 blank line contains whitespace[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:72:22: Q000 Double quotes found but single quotes preferred[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:129:26: Q000 Double quotes found but single quotes preferred[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:138:30: Q000 Double quotes found but single quotes preferred[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:139:100: E501 line too long (100 > 99 characters)[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:142:26: Q000 Double quotes found but single quotes preferred[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:177:26: Q000 Double quotes found but single quotes preferred[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:198:26: Q000 Double quotes found but single quotes preferred[0m
+[0.560s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:231:11: W292 no newline at end of file[0m
+[0.560s] [1m[31mE     ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.[0m
+[0.561s] [1m[31mE     ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file[0m
+[0.561s] [1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[0.561s] [1m[31mE     ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.[0m
+[0.561s] [1m[31mE   assert 1 == 0[0m
+[0.561s] ----------------------------- Captured stdout call -----------------------------
+[0.561s] 
+[0.561s] ./corridor_drone_pkg/corridor_controller.py:70:1: W293 blank line contains whitespace
+[0.561s]         
+[0.561s] ^
+[0.561s] 
+[0.561s] ./corridor_drone_pkg/corridor_controller.py:72:22: Q000 Double quotes found but single quotes preferred
+[0.561s]         self.state = "TAKEOFF"
+[0.561s]                      ^
+[0.561s] 
+[0.561s] ./corridor_drone_pkg/corridor_controller.py:129:26: Q000 Double quotes found but single quotes preferred
+[0.561s]         if self.state == "TAKEOFF":
+[0.561s]                          ^
+[0.561s] 
+[0.561s] ./corridor_drone_pkg/corridor_controller.py:138:30: Q000 Double quotes found but single quotes preferred
+[0.561s]                 self.state = "CRUISE"
+[0.562s]                              ^
+[0.562s] 
+[0.562s] ./corridor_drone_pkg/corridor_controller.py:139:100: E501 line too long (100 > 99 characters)
+[0.562s]                 self.get_logger().info('Takeoff complete. Entering CRUISE corridor centering mode.')
+[0.562s]                                                                                                    ^
+[0.562s] 
+[0.562s] ./corridor_drone_pkg/corridor_controller.py:142:26: Q000 Double quotes found but single quotes preferred
+[0.562s]         if self.state == "LANDING":
+[0.562s]                          ^
+[0.562s] 
+[0.562s] ./corridor_drone_pkg/corridor_controller.py:177:26: Q000 Double quotes found but single quotes preferred
+[0.562s]             self.state = "LANDING"
+[0.562s]                          ^
+[0.562s] 
+[0.562s] ./corridor_drone_pkg/corridor_controller.py:198:26: Q000 Double quotes found but single quotes preferred
+[0.562s]             self.state = "LANDING"
+[0.562s]                          ^
+[0.562s] 
+[0.562s] ./corridor_drone_pkg/corridor_controller.py:231:11: W292 no newline at end of file
+[0.562s]     main()          ^
+[0.563s] 
+[0.563s] ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[0.563s] from ament_index_python.packages import get_package_share_directory
+[0.563s] ^
+[0.563s] 
+[0.563s] ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file
+[0.563s]     ])      ^
+[0.563s] 
+[0.563s] ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[0.563s] from glob import glob
+[0.563s] ^
+[0.563s] 
+[0.563s] ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.
+[0.563s] from setuptools import find_packages, setup
+[0.563s] ^
+[0.563s] 
+[0.563s] 1     E501 line too long (100 > 99 characters)
+[0.563s] 1     I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[0.563s] 2     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[0.563s] 6     Q000 Double quotes found but single quotes preferred
+[0.563s] 2     W292 no newline at end of file
+[0.564s] 1     W293 blank line contains whitespace
+[0.564s] 
+[0.564s] 7 files checked
+[0.564s] 13 errors
+[0.564s] 
+[0.564s] 'E'-type errors: 1
+[0.564s] 'I'-type errors: 3
+[0.564s] 'Q'-type errors: 6
+[0.564s] 'W'-type errors: 3
+[0.564s] 
+[0.564s] Checked files:
+[0.564s] 
+[0.564s] * ./setup.py
+[0.564s] * ./launch/corridor_sim.launch.py
+[0.564s] * ./corridor_drone_pkg/__init__.py
+[0.564s] * ./corridor_drone_pkg/corridor_controller.py
+[0.564s] * ./test/test_pep257.py
+[0.564s] * ./test/test_flake8.py
+[0.564s] * ./test/test_copyright.py
+[0.564s] - generated xml file: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml -
+[0.564s] [36m[1m=========================== short test summary info ============================[0m
+[0.564s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 13 code style errors / warnings:
+[0.564s] [31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.21s[0m[31m ====================[0m
+[0.622s] Invoked command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest

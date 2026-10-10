@@ -1,0 +1,103 @@
+[0.311s] Invoking command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg': AMENT_PREFIX_PATH=/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest
+[0.788s] [1m============================= test session starts ==============================[0m
+[0.788s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.793s] cachedir: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache
+[0.794s] rootdir: /home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg
+[0.794s] plugins: ament-lint-0.17.5, ament-flake8-0.17.5, ament-pep257-0.17.5, launch-testing-ros-0.26.12, ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, cov-4.1.0, colcon-core-0.21.3
+[0.938s] [1mcollecting ... [0m[1m
+[0.938s] collected 3 items                                                              [0m
+[0.938s] 
+[0.945s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[1.158s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[1.187s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[1.187s] 
+[1.187s] =================================== FAILURES ===================================
+[1.187s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[1.187s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[1.231s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1.231s] [1m[31mE   AssertionError: Found 11 code style errors / warnings:[0m
+[1.231s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:11:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'[0m
+[1.231s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:53:1: E302 expected 2 blank lines, found 1[0m
+[1.232s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:56:1: W293 blank line contains whitespace[0m
+[1.232s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:129:100: E501 line too long (100 > 99 characters)[0m
+[1.232s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:167:1: E302 expected 2 blank lines, found 1[0m
+[1.232s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:178:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1.232s] [1m[31mE     ./corridor_drone_pkg/corridor_controller.py:179:11: W292 no newline at end of file[0m
+[1.232s] [1m[31mE     ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.[0m
+[1.233s] [1m[31mE     ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file[0m
+[1.233s] [1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[1.233s] [1m[31mE     ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.[0m
+[1.233s] [1m[31mE   assert 1 == 0[0m
+[1.233s] ----------------------------- Captured stdout call -----------------------------
+[1.233s] 
+[1.234s] ./corridor_drone_pkg/corridor_controller.py:11:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+[1.234s] from geometry_msgs.msg import Twist
+[1.234s] ^
+[1.234s] 
+[1.234s] ./corridor_drone_pkg/corridor_controller.py:53:1: E302 expected 2 blank lines, found 1
+[1.235s] class CorridorController(Node):
+[1.235s] ^
+[1.235s] 
+[1.235s] ./corridor_drone_pkg/corridor_controller.py:56:1: W293 blank line contains whitespace
+[1.235s]         
+[1.235s] ^
+[1.236s] 
+[1.236s] ./corridor_drone_pkg/corridor_controller.py:129:100: E501 line too long (100 > 99 characters)
+[1.236s]             self.get_logger().info(f'Reached end of corridor (Front: {front_dist:.2f}m). Stopping!')
+[1.236s]                                                                                                    ^
+[1.236s] 
+[1.236s] ./corridor_drone_pkg/corridor_controller.py:167:1: E302 expected 2 blank lines, found 1
+[1.237s] def main(args=None):
+[1.237s] ^
+[1.237s] 
+[1.237s] ./corridor_drone_pkg/corridor_controller.py:178:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.237s] if __name__ == '__main__':
+[1.237s] ^
+[1.237s] 
+[1.238s] ./corridor_drone_pkg/corridor_controller.py:179:11: W292 no newline at end of file
+[1.238s]     main()          ^
+[1.238s] 
+[1.238s] ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[1.238s] from ament_index_python.packages import get_package_share_directory
+[1.238s] ^
+[1.239s] 
+[1.239s] ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file
+[1.239s]     ])      ^
+[1.239s] 
+[1.239s] ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+[1.239s] from glob import glob
+[1.239s] ^
+[1.240s] 
+[1.240s] ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.
+[1.240s] from setuptools import find_packages, setup
+[1.240s] ^
+[1.240s] 
+[1.240s] 2     E302 expected 2 blank lines, found 1
+[1.241s] 1     E305 expected 2 blank lines after class or function definition, found 1
+[1.241s] 1     E501 line too long (100 > 99 characters)
+[1.241s] 2     I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+[1.241s] 2     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[1.241s] 2     W292 no newline at end of file
+[1.241s] 1     W293 blank line contains whitespace
+[1.241s] 
+[1.242s] 7 files checked
+[1.242s] 11 errors
+[1.242s] 
+[1.242s] 'E'-type errors: 4
+[1.242s] 'I'-type errors: 4
+[1.242s] 'W'-type errors: 3
+[1.243s] 
+[1.243s] Checked files:
+[1.243s] 
+[1.243s] * ./setup.py
+[1.243s] * ./launch/corridor_sim.launch.py
+[1.243s] * ./corridor_drone_pkg/__init__.py
+[1.243s] * ./corridor_drone_pkg/corridor_controller.py
+[1.244s] * ./test/test_pep257.py
+[1.244s] * ./test/test_flake8.py
+[1.244s] * ./test/test_copyright.py
+[1.244s] - generated xml file: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml -
+[1.244s] [36m[1m=========================== short test summary info ============================[0m
+[1.244s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 11 code style errors / warnings:
+[1.245s] [31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.44s[0m[31m ====================[0m
+[1.352s] Invoked command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg' returned '1': AMENT_PREFIX_PATH=/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg:${AMENT_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest

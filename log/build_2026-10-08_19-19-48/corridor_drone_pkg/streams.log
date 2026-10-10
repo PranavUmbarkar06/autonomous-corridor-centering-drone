@@ -1,0 +1,27 @@
+[1.108s] Invoking command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/corridor_drone_pkg build --build-base /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build install --record /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/install.log --install-scripts $base/lib/corridor_drone_pkg --single-version-externally-managed install_data
+[1.426s] running egg_info
+[1.442s] writing ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/PKG-INFO
+[1.443s] writing dependency_links to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/dependency_links.txt
+[1.444s] writing entry points to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/entry_points.txt
+[1.444s] writing requirements to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/requires.txt
+[1.444s] writing top-level names to ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/top_level.txt
+[1.485s] reading manifest file '../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/SOURCES.txt'
+[1.485s] writing manifest file '../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info/SOURCES.txt'
+[1.486s] running build
+[1.486s] running build_py
+[1.486s] copying corridor_drone_pkg/corridor_controller.py -> /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg
+[1.487s] running install
+[1.495s] running install_lib
+[1.513s] copying /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build/lib/corridor_drone_pkg/corridor_controller.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg
+[1.515s] byte-compiling /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg/corridor_controller.py to corridor_controller.cpython-312.pyc
+[1.517s] running install_data
+[1.518s] copying package.xml -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg
+[1.518s] copying launch/corridor_sim.launch.py -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/launch
+[1.518s] copying worlds/corridor_drone.sdf -> /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/share/corridor_drone_pkg/worlds
+[1.518s] running install_egg_info
+[1.537s] removing '/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[1.537s] Copying ../../build/corridor_drone_pkg/corridor_drone_pkg.egg-info to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor_drone_pkg-0.0.0-py3.12.egg-info
+[1.537s] running install_scripts
+[1.678s] Installing corridor_controller script to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/corridor_drone_pkg
+[1.679s] writing list of installed files to '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/install.log'
+[1.759s] Invoked command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/corridor_drone_pkg build --build-base /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build install --record /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/install.log --install-scripts $base/lib/corridor_drone_pkg --single-version-externally-managed install_data

@@ -1,0 +1,101 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache
+rootdir: /home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg
+plugins: ament-lint-0.17.5, ament-flake8-0.17.5, ament-pep257-0.17.5, launch-testing-ros-0.26.12, ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, cov-4.1.0, colcon-core-0.21.3
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 11 code style errors / warnings:[0m
+[1m[31mE     ./corridor_drone_pkg/corridor_controller.py:11:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'[0m
+[1m[31mE     ./corridor_drone_pkg/corridor_controller.py:53:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./corridor_drone_pkg/corridor_controller.py:56:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./corridor_drone_pkg/corridor_controller.py:129:100: E501 line too long (100 > 99 characters)[0m
+[1m[31mE     ./corridor_drone_pkg/corridor_controller.py:167:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./corridor_drone_pkg/corridor_controller.py:178:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./corridor_drone_pkg/corridor_controller.py:179:11: W292 no newline at end of file[0m
+[1m[31mE     ./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.[0m
+[1m[31mE     ./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file[0m
+[1m[31mE     ./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'[0m
+[1m[31mE     ./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./corridor_drone_pkg/corridor_controller.py:11:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+from geometry_msgs.msg import Twist
+^
+
+./corridor_drone_pkg/corridor_controller.py:53:1: E302 expected 2 blank lines, found 1
+class CorridorController(Node):
+^
+
+./corridor_drone_pkg/corridor_controller.py:56:1: W293 blank line contains whitespace
+        
+^
+
+./corridor_drone_pkg/corridor_controller.py:129:100: E501 line too long (100 > 99 characters)
+            self.get_logger().info(f'Reached end of corridor (Front: {front_dist:.2f}m). Stopping!')
+                                                                                                   ^
+
+./corridor_drone_pkg/corridor_controller.py:167:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./corridor_drone_pkg/corridor_controller.py:178:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./corridor_drone_pkg/corridor_controller.py:179:11: W292 no newline at end of file
+    main()          ^
+
+./launch/corridor_sim.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+from ament_index_python.packages import get_package_share_directory
+^
+
+./launch/corridor_sim.launch.py:42:7: W292 no newline at end of file
+    ])      ^
+
+./setup.py:2:1: I100 Import statements are in the wrong order. 'from glob import glob' should be before 'import os'
+from glob import glob
+^
+
+./setup.py:3:1: I201 Missing newline between import groups. 'from setuptools import find_packages, setup' is identified as Third Party and 'from glob import glob' is identified as Stdlib.
+from setuptools import find_packages, setup
+^
+
+2     E302 expected 2 blank lines, found 1
+1     E305 expected 2 blank lines after class or function definition, found 1
+1     E501 line too long (100 > 99 characters)
+2     I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+2     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+2     W292 no newline at end of file
+1     W293 blank line contains whitespace
+
+7 files checked
+11 errors
+
+'E'-type errors: 4
+'I'-type errors: 4
+'W'-type errors: 3
+
+Checked files:
+
+* ./setup.py
+* ./launch/corridor_sim.launch.py
+* ./corridor_drone_pkg/__init__.py
+* ./corridor_drone_pkg/corridor_controller.py
+* ./test/test_pep257.py
+* ./test/test_flake8.py
+* ./test/test_copyright.py
+- generated xml file: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml -
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 11 code style errors / warnings:
+[31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.44s[0m[31m ====================[0m

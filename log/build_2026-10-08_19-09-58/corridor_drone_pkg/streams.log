@@ -1,0 +1,17 @@
+[0.576s] Invoking command in '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build --no-deps symlink_data
+[0.735s] running develop
+[0.821s] running egg_info
+[0.830s] writing corridor_drone_pkg.egg-info/PKG-INFO
+[0.830s] writing dependency_links to corridor_drone_pkg.egg-info/dependency_links.txt
+[0.830s] writing entry points to corridor_drone_pkg.egg-info/entry_points.txt
+[0.830s] writing requirements to corridor_drone_pkg.egg-info/requires.txt
+[0.830s] writing top-level names to corridor_drone_pkg.egg-info/top_level.txt
+[0.847s] reading manifest file 'corridor_drone_pkg.egg-info/SOURCES.txt'
+[0.847s] writing manifest file 'corridor_drone_pkg.egg-info/SOURCES.txt'
+[0.856s] running build_ext
+[0.856s] Creating /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages/corridor-drone-pkg.egg-link (link to .)
+[0.856s] Installing corridor_controller script to /home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/corridor_drone_pkg
+[0.856s] 
+[0.856s] Installed /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg
+[0.856s] running symlink_data
+[0.874s] Invoked command in '/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pranav-umbarkar/corridor_ws/install/corridor_drone_pkg/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/build --no-deps symlink_data

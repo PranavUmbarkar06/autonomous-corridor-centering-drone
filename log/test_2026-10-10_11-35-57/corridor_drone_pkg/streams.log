@@ -1,0 +1,16 @@
+[0.141s] Invoking command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest
+[0.338s] [1m============================= test session starts ==============================[0m
+[0.339s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.341s] cachedir: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache
+[0.341s] rootdir: /home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg
+[0.341s] plugins: ament-lint-0.17.5, ament-flake8-0.17.5, ament-pep257-0.17.5, launch-testing-ros-0.26.12, ament-xmllint-0.17.5, launch-testing-3.4.11, ament-copyright-0.17.5, cov-4.1.0, colcon-core-0.21.3
+[0.390s] [1mcollecting ... [0m[1m
+[0.390s] collected 3 items                                                              [0m
+[0.390s] 
+[0.394s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.500s] test/test_flake8.py [32m.[0m[32m                                                    [ 66%][0m
+[0.517s] test/test_pep257.py [32m.[0m[32m                                                    [100%][0m
+[0.517s] 
+[0.517s] - generated xml file: /home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml -
+[0.517s] [32m========================= [32m[1m2 passed[0m, [33m1 skipped[0m[32m in 0.18s[0m[32m =========================[0m
+[0.577s] Invoked command in '/home/pranav-umbarkar/corridor_ws/src/corridor_drone_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTEST_ADDOPTS=--tb=short --junit-xml=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/pytest.xml --junit-prefix=corridor_drone_pkg -o cache_dir=/home/pranav-umbarkar/corridor_ws/build/corridor_drone_pkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(venv-ardupilot) /usr/bin/python3 -m pytest
