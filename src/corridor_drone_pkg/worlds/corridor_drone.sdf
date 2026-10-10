@@ -41,7 +41,7 @@
     <!-- LEFT CORRIDOR WALL -->
     <model name="left_wall">
       <static>true</static>
-      <pose>5 1.6 1 0 0 0</pose>
+      <pose>5 3 1 0 0 0</pose>
       <link name="link">
         <collision name="col"><geometry><box><size>10 0.2 2</size></box></geometry></collision>
         <visual name="vis"><geometry><box><size>10 0.2 2</size></box></geometry></visual>
@@ -51,7 +51,7 @@
     <!-- RIGHT CORRIDOR WALL -->
     <model name="right_wall">
       <static>true</static>
-      <pose>5 -2 1 0 0 0</pose>
+      <pose>5 -1 1 0 0 0</pose>
       <link name="link">
         <collision name="col"><geometry><box><size>10 0.2 2</size></box></geometry></collision>
         <visual name="vis"><geometry><box><size>10 0.2 2</size></box></geometry></visual>
@@ -61,7 +61,7 @@
     <!-- FRONT CORRIDOR WALL; move along X to change the corridor length. -->
     <model name="front_wall">
       <static>true</static>
-      <pose>10.1 0 1 0 0 0</pose>
+      <pose>6 0 1 0 0 0</pose>
       <link name="link">
         <collision name="col"><geometry><box><size>0.2 3.6 2</size></box></geometry></collision>
         <visual name="vis"><geometry><box><size>0.2 3.6 2</size></box></geometry></visual>
